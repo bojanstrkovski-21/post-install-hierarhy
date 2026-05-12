@@ -1,0 +1,61 @@
+#!/bin/bash
+echo "Installing all arcolinux-arc theme packages..."
+sudo pacman -S --needed --noconfirm \
+  arcolinux-arc-aqua-git \
+  arcolinux-arc-archlinux-blue-git \
+  arcolinux-arc-arcolinux-blue-git \
+  arcolinux-arc-azul-git \
+  arcolinux-arc-azure-dodger-blue-git \
+  arcolinux-arc-azure-git \
+  arcolinux-arc-blood-git \
+  arcolinux-arc-blue-sky-git \
+  arcolinux-arc-blueberry-git \
+  arcolinux-arc-botticelli-git \
+  arcolinux-arc-bright-lilac-git \
+  arcolinux-arc-carnation-git \
+  arcolinux-arc-carolina-blue-git \
+  arcolinux-arc-casablanca-git \
+  arcolinux-arc-cornflower-blue-git \
+  arcolinux-arc-crimson-git \
+  arcolinux-arc-darkish-git \
+  arcolinux-arc-dawn-git \
+  arcolinux-arc-dodger-blue-git \
+  arcolinux-arc-dracul-git \
+  arcolinux-arc-emerald-git \
+  arcolinux-arc-evopop-git \
+  arcolinux-arc-fern-git \
+  arcolinux-arc-fire-git \
+  arcolinux-arc-froly-git \
+  arcolinux-arc-havelock-git \
+  arcolinux-arc-hibiscus-git \
+  arcolinux-arc-kde \
+  arcolinux-arc-light-blue-grey-git \
+  arcolinux-arc-light-blue-surfn-git \
+  arcolinux-arc-light-salmon-git \
+  arcolinux-arc-mandy-git \
+  arcolinux-arc-mantis-git \
+  arcolinux-arc-medium-blue-git \
+  arcolinux-arc-niagara-git \
+  arcolinux-arc-nice-blue-git \
+  arcolinux-arc-numix-git \
+  arcolinux-arc-orchid-git \
+  arcolinux-arc-pale-grey-git \
+  arcolinux-arc-paper-git \
+  arcolinux-arc-pink-git \
+  arcolinux-arc-polo-git \
+  arcolinux-arc-punch-git \
+  arcolinux-arc-purpley-git \
+  arcolinux-arc-red-orange-git \
+  arcolinux-arc-red-violet-git \
+  arcolinux-arc-rusty-orange-git \
+  arcolinux-arc-sky-blue-git \
+  arcolinux-arc-slate-grey-git \
+  arcolinux-arc-smoke-git \
+  arcolinux-arc-soft-blue-git \
+  arcolinux-arc-tacao-git \
+  arcolinux-arc-tangerine-git \
+  arcolinux-arc-tory-git \
+  arcolinux-arc-twilight-git \
+  arcolinux-arc-vampire-git \
+  arcolinux-arc-warm-pink-git
+echo "Done."

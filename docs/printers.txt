@@ -1,0 +1,57 @@
+can you check what packages is linux mint using for printers and scaners and stuf like and is it possible to have them in arch linux. And what is that service when i connect to a network it automaticly finds printers an i am connected8:58 PMClaude responded: Good questions — here's the full breakdown:Searched the webSearched the webGood questions — here's the full breakdown:
+
+What Linux Mint installs for printing/scanning:
+Since version 21, Linux Mint features driverless printing and scanning where printers are detected and added automatically via a standard protocol called IPP — no drivers needed. The core packages it uses are: Blogger
+
+cups — the print server, the backbone of everything
+cups-filters — processing filters for CUPS
+ipp-usb — enables driverless IPP over USB connections
+sane + sane-airscan — scanner framework; airscan adds driverless network/USB scanning
+simple-scan — the default GUI scanner app
+hplip — HP drivers, installed by default in Linux Mint Linux Mint User Guide
+system-config-printer — the printer settings GUI
+
+All of these are available on Arch with the exact same package names, either in the official repos or AUR.
+
+Your question about automatic network printer discovery — that's two things working together:
+Avahi — this is the mDNS/DNS-SD daemon. CUPS uses it to discover unknown shared printers on your network. AirPrint and IPP Everywhere printers should be discovered automatically if avahi-daemon.service is running. ArchWiki
+cups-browsed — this service dynamically adds and removes printers as they appear and disappear from the network. It's only needed for legacy CUPS protocol and LDAP servers; basic DNS-SD discovery is handled by CUPS + Avahi alone. ArchWiki
+So the "magic auto-connect" feeling in Mint comes from avahi-daemon + cups running together. 
+
+On Arch you get the exact same behavior with:
+
+sudo pacman -S cups cups-filters cups-browsed ipp-usb sane sane-airscan \
+  simple-scan system-config-printer avahi nss-mdns hplip
+
+
+Then enable the services:
+
+sudo systemctl enable --now cups avahi-daemon ipp-usb
+
+And make sure /etc/nsswitch.conf has mdns_minimal in the hosts line so .local hostnames resolve — that's the one thing Arch doesn't do automatically that Mint does out of the box.
+
+--------------------------------------------------------------------------------------------------
+all this is for any printer or i need other utilities example brother printers samsung kyocera xerox etc.9:03 PMClaude responded: Great question.Great question. The short answer is: the core stack covers most modern printers, but some brands need extras.
+
+Works out of the box with just the core stack (cups + ipp-usb + avahi):
+Any printer made roughly after 2010 that supports AirPrint, IPP Everywhere, or eSCL — which covers most current HP, Epson, Canon, Brother, Samsung, Xerox, Kyocera models. You plug it in or connect to the network and it just works, driverless.
+
+Brand-specific extras you might need:
+
+HP → hplip (already mentioned, covers like 90% of HP printers). Some specific models also need the proprietary hplip-plugin from AUR — you run hp-setup after install and it tells you if you need it.
+Epson → epson-inkjet-printer-escpr and/or epson-inkjet-printer-escpr2 (AUR) for older inkjets. Newer ones are driverless.
+Canon → cnijfilter2 (AUR) for PIXMA series. Older models may need capt-src (AUR) for laser printers.
+Brother → Most modern ones are driverless now. Older ones need brother-brscan4 or brother-brscan5 (AUR) specifically for the scanner part — the printer side often works without. Brother has a package on their site and there's also brscan-skey for scan-to-PC button support.
+Samsung → Samsung printers were acquired by HP, so many are now covered by hplip. Older Samsung lasers may need splix from AUR.
+Kyocera → kyocera-cups (AUR) for older models. Most current Kyocera business printers support IPP Everywhere so they're driverless.
+Xerox → Most modern Xerox support IPP/AirPrint natively. Older ones have xerox-phaser-3100mfp type packages in AUR, very model-specific.
+
+
+The practical reality:
+For home/SOHO printers bought in the last 5-6 years, the core stack alone is almost certainly enough. The brand-specific AUR packages are mainly for:
+
+Older printers that predate driverless IPP
+Getting the scanner working on older all-in-ones (this is where Brother especially needs extra packages)
+Advanced features like ink level monitoring, scan-to-email buttons, etc.
+
+A good way to check before installing anything extra is the OpenPrinting database at openprinting.org — search your printer model and it tells you exactly what driver/package you need, if any.
