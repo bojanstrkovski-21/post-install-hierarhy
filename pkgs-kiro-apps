@@ -1,148 +1,213 @@
 ###applications
-chromium
-dmenu
-firefox
-galculator
-gcolor3
-gimp
-hw-probe
-imagemagick
-inkscape
-lm_sensors
-lshw
-meld
-numlockx
-qbittorrent
-scrot
-simplescreenrecorder-git
-vlc
-vlc-plugins-all
+#sudo pacman -S --needed --noconfirm dex
+#sudo pacman -S--needed --noconfirm discord
+#sudo pacman -S--needed --noconfirm evince
+#sudo pacman -S--needed --noconfirm telegram-desktop
+#sudo pacman -S--needed --noconfirm signal-in-tray
+#sudo pacman -S--needed --noconfirm gpick
+#sudo pacman -S--needed --noconfirm simplescreenrecorder-git
+#sudo pacman -S--needed --noconfirm signal-desktop
+#sudo pacman -S--needed --noconfirm variety
+sudo pacman -S --needed --noconfirm chromium
+sudo pacman -S --needed --noconfirm firefox
+sudo pacman -S --needed --noconfirm qalculate-gtk
+sudo pacman -S --needed --noconfirm gcolor3
+sudo pacman -S --needed --noconfirm gimp
+sudo pacman -S --needed --noconfirm gparted
+sudo pacman -S --needed --noconfirm inkscape
+sudo pacman -S --needed --noconfirm meld
+sudo pacman -S --needed --noconfirm qbittorrent
+sudo pacman -S --needed --noconfirm sublime-text-4
+sudo pacman -S --needed --noconfirm vlc
+sudo pacman -S --needed --noconfirm vlc-plugins-all
+sudo pacman -S --needed --noconfirm alacritty
+sudo pacman -S --needed --noconfirm brave-bin
+sudo pacman -S --needed --noconfirm simple-scan
+sudo pacman -S --needed --noconfirm resources
+sudo pacman -S --needed --noconfirm shortwave
+sudo pacman -S --needed --noconfirm visual-studio-code-bin
+sudo pacman -S --needed --noconfirm ristretto
+
+##build-ftom-souce
+#dmenu-sukless
 
 ###fonts
-adobe-source-sans-fonts
-noto-fonts
-ttf-dejavu
-ttf-droid
-ttf-hack
-ttf-roboto
-ttf-roboto-mono
-ttf-ubuntu-font-family
-inter-font
-ttf-ms-fonts
-otf-font-awesome
-woff2-font-awesome
+sudo pacman -S --needed --noconfirm adobe-source-sans-fonts
+sudo pacman -S --needed --noconfirm noto-fonts
+sudo pacman -S --needed --noconfirm ttf-dejavu
+sudo pacman -S --needed --noconfirm ttf-droid
+sudo pacman -S --needed --noconfirm ttf-hack
+sudo pacman -S --needed --noconfirm noto-fonts-emoji
+sudo pacman -S --needed --noconfirm ttf-roboto
+sudo pacman -S --needed --noconfirm ttf-roboto-mono
+sudo pacman -S --needed --noconfirm ttf-ubuntu-font-family
+sudo pacman -S --needed --noconfirm inter-font
+sudo pacman -S --needed --noconfirm ttf-ms-fonts
+sudo pacman -S --needed --noconfirm otf-font-awesome
+sudo pacman -S --needed --noconfirm woff2-font-awesome
 
 ###utilities
-#dex
-#discord
-#evince
-#file-roller
-#glances
-#gpick
-#oh-my-zsh-git
-#telegram-desktop
-#tlp
-#zsh
-#zsh-completions
-#zsh-syntax-highlighting
-ananicy-cpp
-appstream
-arandr
-archlinux-tools
-baobab
-bash-completion
-bat
-cachyos-ananicy-rules-git
-catfish
-cpuid
-cronie
-dconf-editor
-downgrade
-duf
-expac
-fastfetch
-feh
-file-roller
-gcc
-gcolor3
-git
-gparted
-gpick
-hardcode-fixer-git
-hardinfo2
-hwinfo
-inxi
-irqbalance
-laptop-detect
-libmtp
-lolcat
-lsb-release
-maim
-make
-ncdu
-nomacs
-p7zip
-pciutils
-pkgfile
-playerctl
-plocate
-polkit
-polkit-gnome
-power-profiles-daemon
-python
-python-pyparted
-python-pywal
-qt5ct
-qt6ct
-ristretto
-simple-scan
-sublime-text-4
-the_silver_searcher
-tree
-tuned
-unace
-unrar
-unzip
-upower
-visual-studio-code-bin
-xapp
-xclip
-xdg-desktop-portal-gtk
-xorg-xsetroot
-yad
-yt-dlp
-zenity
-zram-generator
+#sudo pacman -S --needed --noconfirm ark
+#sudo pacman -S --needed --noconfirm file-roller
+#sudo pacman -S --needed --noconfirm glances
+#sudo pacman -S --needed --noconfirm lshw
+#sudo pacman -S --needed --noconfirm oh-my-zsh-git
+#sudo pacman -S --needed --noconfirm tlp
+#sudo pacman -S --needed --noconfirm zsh
+#sudo pacman -S --needed --noconfirm zsh-completions
+#sudo pacman -S --needed --noconfirm zsh-syntax-highlighting
+pudo pacman -S --needed --noconfirm poppler-qt6
+sudo pacman -S --needed --noconfirm acpi
+sudo pacman -S --needed --noconfirm acpid
+sudo pacman -S --needed --noconfirm ananicy-cpp
+sudo pacman -S --needed --noconfirm appstream
+sudo pacman -S --needed --noconfirm arandr
+sudo pacman -S --needed --noconfirm archiso
+sudo pacman -S --needed --noconfirm archlinux-appstream-data
+sudo pacman -S --needed --noconfirm archlinux-tools
+sudo pacman -S --needed --noconfirm archlinux-wallpaper
+sudo pacman -S --needed --noconfirm baobab
+sudo pacman -S --needed --noconfirm base
+sudo pacman -S --needed --noconfirm base-devel
+sudo pacman -S --needed --noconfirm bash-completion
+sudo pacman -S --needed --noconfirm bat
+sudo pacman -S --needed --noconfirm btop
+sudo pacman -S --needed --noconfirm cachyos-ananicy-rules-git
+sudo pacman -S --needed --noconfirm catfish
+sudo pacman -S --needed --noconfirm cmake
+sudo pacman -S --needed --noconfirm cmake-extras
+sudo pacman -S --needed --noconfirm cpuid
+sudo pacman -S --needed --noconfirm cronie
+sudo pacman -S --needed --noconfirm curl
+sudo pacman -S --needed --noconfirm dconf
+sudo pacman -S --needed --noconfirm dconf-editor
+sudo pacman -S --needed --noconfirm devtools
+sudo pacman -S --needed --noconfirm dialog
+sudo pacman -S --needed --noconfirm dkms
+sudo pacman -S --needed --noconfirm dnsutils
+sudo pacman -S --needed --noconfirm dosfstools
+sudo pacman -S --needed --noconfirm downgrade
+sudo pacman -S --needed --noconfirm duf
+sudo pacman -S --needed --noconfirm efibootmgr
+sudo pacman -S --needed --noconfirm efitools
+sudo pacman -S --needed --noconfirm expac
+sudo pacman -S --needed --noconfirm extra-cmake-modules
+sudo pacman -S --needed --noconfirm eza
+sudo pacman -S --needed --noconfirm fastfetch
+sudo pacman -S --needed --noconfirm fd
+sudo pacman -S --needed --noconfirm feh
+sudo pacman -S --needed --noconfirm ffmpegthumbnailer
+sudo pacman -S --needed --noconfirm file-roller
+sudo pacman -S --needed --noconfirm fish
+sudo pacman -S --needed --noconfirm freetype2
+sudo pacman -S --needed --noconfirm fwupd
+sudo pacman -S --needed --noconfirm fzf
+sudo pacman -S --needed --noconfirm gcc
+sudo pacman -S --needed --noconfirm git
+sudo pacman -S --needed --noconfirm gvfs
+sudo pacman -S --needed --noconfirm gvfs-afc
+sudo pacman -S --needed --noconfirm gvfs-dnssd
+sudo pacman -S --needed --noconfirm gvfs-goa
+sudo pacman -S --needed --noconfirm gvfs-gphoto2
+sudo pacman -S --needed --noconfirm gvfs-mtp
+sudo pacman -S --needed --noconfirm gvfs-nfs
+sudo pacman -S --needed --noconfirm gvfs-smb
+sudo pacman -S --needed --noconfirm hardcode-fixer-git
+sudo pacman -S --needed --noconfirm hardinfo2
+sudo pacman -S --needed --noconfirm hw-probe
+sudo pacman -S --needed --noconfirm hwdata
+sudo pacman -S --needed --noconfirm hwdetect
+sudo pacman -S --needed --noconfirm hwinfo
+sudo pacman -S --needed --noconfirm imagemagick
+sudo pacman -S --needed --noconfirm intltool
+sudo pacman -S --needed --noconfirm inxi
+sudo pacman -S --needed --noconfirm irqbalance
+sudo pacman -S --needed --noconfirm laptop-detect
+sudo pacman -S --needed --noconfirm libadwaita
+sudo pacman -S --needed --noconfirm libburn
+sudo pacman -S --needed --noconfirm libgsf
+sudo pacman -S --needed --noconfirm libisoburn
+sudo pacman -S --needed --noconfirm libisofs
+sudo pacman -S --needed --noconfirm libmtp
+sudo pacman -S --needed --noconfirm libopenraw
+sudo pacman -S --needed --noconfirm linux-firmware
+sudo pacman -S --needed --noconfirm linux-headers
+sudo pacman -S --needed --noconfirm lm_sensors
+sudo pacman -S --needed --noconfirm logrotate
+sudo pacman -S --needed --noconfirm lolcat
+sudo pacman -S --needed --noconfirm lsb-release
+sudo pacman -S --needed --noconfirm maim
+sudo pacman -S --needed --noconfirm make
+sudo pacman -S --needed --noconfirm menulibre
+sudo pacman -S --needed --noconfirm mesa
+sudo pacman -S --needed --noconfirm mesa-utils
+sudo pacman -S --needed --noconfirm mkinitcpio-firmware
+sudo pacman -S --needed --noconfirm most
+sudo pacman -S --needed --noconfirm mtpfs
+sudo pacman -S --needed --noconfirm mugshot
+sudo pacman -S --needed --noconfirm namcap
+sudo pacman -S --needed --noconfirm ncdu
+sudo pacman -S --needed --noconfirm ntp
+sudo pacman -S --needed --noconfirm numlockx
+sudo pacman -S --needed --noconfirm openssl
+sudo pacman -S --needed --noconfirm os-prober
+sudo pacman -S --needed --noconfirm p7zip
+sudo pacman -S --needed --noconfirm pacman-contrib
+sudo pacman -S --needed --noconfirm pacmanlogviewer
+sudo pacman -S --needed --noconfirm pacquery
+sudo pacman -S --needed --noconfirm pacutils
+sudo pacman -S --needed --noconfirm pciutils
+sudo pacman -S --needed --noconfirm pkgconf
+sudo pacman -S --needed --noconfirm pkgfile
+sudo pacman -S --needed --noconfirm playerctl
+sudo pacman -S --needed --noconfirm plocate
+sudo pacman -S --needed --noconfirm polkit
+sudo pacman -S --needed --noconfirm polkit-gnome
+sudo pacman -S --needed --noconfirm poppler-glib
+sudo pacman -S --needed --noconfirm poppler-qt5
+sudo pacman -S --needed --noconfirm power-profiles-daemon
+sudo pacman -S --needed --noconfirm python
+sudo pacman -S --needed --noconfirm python-pylint
+sudo pacman -S --needed --noconfirm python-pyparted
+sudo pacman -S --needed --noconfirm python-pywal
+sudo pacman -S --needed --noconfirm qt5ct
+sudo pacman -S --needed --noconfirm qt6ct
+sudo pacman -S --needed --noconfirm ripgrep
+sudo pacman -S --needed --noconfirm ripgrep-all
+sudo pacman -S --needed --noconfirm scrot
+sudo pacman -S --needed --noconfirm sdl12-compat
+sudo pacman -S --needed --noconfirm sdl2
+sudo pacman -S --needed --noconfirm sdl3
+sudo pacman -S --needed --noconfirm sparklines-git
+sudo pacman -S --needed --noconfirm the_silver_searcher
+sudo pacman -S --needed --noconfirm time
+sudo pacman -S --needed --noconfirm tldr
+sudo pacman -S --needed --noconfirm tree
+sudo pacman -S --needed --noconfirm tumbler
+sudo pacman -S --needed --noconfirm tuned
+sudo pacman -S --needed --noconfirm udftools
+sudo pacman -S --needed --noconfirm udiskie
+sudo pacman -S --needed --noconfirm udisks2
+sudo pacman -S --needed --noconfirm unace
+sudo pacman -S --needed --noconfirm unrar
+sudo pacman -S --needed --noconfirm unzip
+sudo pacman -S --needed --noconfirm upower
+sudo pacman -S --needed --noconfirm webkit2gtk
+sudo pacman -S --needed --noconfirm wget
+sudo pacman -S --needed --noconfirm xapp
+sudo pacman -S --needed --noconfirm xclip
+sudo pacman -S --needed --noconfirm xdg-desktop-portal
+sudo pacman -S --needed --noconfirm xdg-desktop-portal-gtk
+sudo pacman -S --needed --noconfirm xdg-user-dirs
+sudo pacman -S --needed --noconfirm xdg-user-dirs-gtk
+sudo pacman -S --needed --noconfirm xdg-utils
+sudo pacman -S --needed --noconfirm xdo
+sudo pacman -S --needed --noconfirm xdotool
+sudo pacman -S --needed --noconfirm xf86-input-libinput
+sudo pacman -S --needed --noconfirm xorg-xsetroot
+sudo pacman -S --needed --noconfirm yad
+sudo pacman -S --needed --noconfirm yt-dlp
+sudo pacman -S --needed --noconfirm zenity
+sudo pacman -S --needed --noconfirm zram-generator
 
 
-###apps
-alacritty
-brave-bin
-btop
-devtools
-fd
-fish
-fzf
-inetutils
-menulibre
-mkinitcpio-firmware
-most
-mugshot
-namcap
-noto-fonts-emoji
-pacmanlogviewer
-pacquery
-python-pylint
-resources
-ripgrep
-ripgrep-all
-#signal-desktop
-#signal-in-tray
-shortwave
-sparklines-git
-time
-tldr
-ttf-ms-fonts
-otf-font-awesome
-woff2-font-awesome
-#variety

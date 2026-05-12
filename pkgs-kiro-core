@@ -69,7 +69,6 @@ xvidcore
 playerctl
 volctl
 pavucontrol
-###pipewire
 
 ###pulseaudio(uncomment pulseaudio pkgs and comment out pipewire pkgd)
 #pulseaudio
@@ -154,6 +153,7 @@ libgsf
 libopenraw
 poppler-glib
 poppler-qt5
+poppler-qt6
 
 
 
