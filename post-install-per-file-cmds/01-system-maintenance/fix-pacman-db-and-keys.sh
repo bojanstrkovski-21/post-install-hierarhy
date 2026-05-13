@@ -64,7 +64,7 @@ if [ $Online -eq 1 ] ; then
 	echo "Installing the latest archlinux-keyring package from the internet"
 	echo
 	tput sgr0
-	sudo pacman -Sy archlinux-keyring --noconfirm
+	sudo pacman -Syy archlinux-keyring --noconfirm
 	echo
 fi
 
@@ -100,15 +100,20 @@ echo "##########################################################################
 echo "Adding Ubuntu keyserver to /etc/pacman.d/gnupg/gpg.conf"
 echo "###############################################################################"
 echo 
-echo "
-keyserver hkp://keyserver.ubuntu.com:80" | sudo tee --append /etc/pacman.d/gnupg/gpg.conf
+#echo "keyserver hkp://keyserver.ubuntu.com:80" | sudo tee --append /etc/pacman.d/gnupg/gpg.conf
+
+if grep -qF "$KEYSERVER" "$GPGCONF" 2>/dev/null; then
+    echo "Keyserver entry already present, skipping"
+else
+    echo -e "\n$KEYSERVER" | sudo tee --append "$GPGCONF"
+fi
 
 echo
 echo "###############################################################################"
 echo "Getting new databases with pacman -Sy"
 echo "###############################################################################"
 echo 
-sudo pacman -Sy
+sudo pacman -Syy
 echo
 
 echo "###############################################################################"
