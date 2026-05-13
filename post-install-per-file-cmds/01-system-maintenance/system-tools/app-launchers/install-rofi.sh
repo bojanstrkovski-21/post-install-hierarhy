@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "Installing Rofi..."
-sudo pacman -S --needed --noconfirm rofi
+sudo pacman -S --needed --noconfirm rofi-categories
 echo "Done."
