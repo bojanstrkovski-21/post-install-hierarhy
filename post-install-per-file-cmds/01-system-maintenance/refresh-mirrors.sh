@@ -58,7 +58,7 @@ else
     echo "Neither reflector nor rate-mirrors is installed."
     echo "Install one with:"
     echo "  sudo pacman -S reflector"
-    echo "  yay -S rate-mirrors-bin"
+    echo "  sudo pacman -S rate-mirrors"
     exit 1
 fi
 
